@@ -6,8 +6,8 @@ tags: [soundproof-booth, construction, progress-control]
 status: stable
 scope: project
 domain: soundproof-booth-project
-updated_at: 2026-01-01T10:00:00+09:00
-generated: { by: codex, at: 2026-01-01T10:00:00+09:00 }
+updated_at: 2026-01-01T11:00:00+09:00
+generated: { by: codex, at: 2026-01-01T11:00:00+09:00 }
 ---
 
 # Purpose
@@ -30,7 +30,7 @@ generated: { by: codex, at: 2026-01-01T10:00:00+09:00 }
 | Phase | Status | Progress | Blocker |
 |---|---|---:|---|
 | Planning | completed | 100% | none |
-| Frame | in progress | 45% | none |
+| Frame | in progress | 62% | none |
 | Panels and Insulation | not started | 0% | frame incomplete |
 | Door and Sealing | not started | 0% | wall opening incomplete |
 | Ventilation | not started | 0% | route position unresolved |
@@ -42,7 +42,7 @@ generated: { by: codex, at: 2026-01-01T10:00:00+09:00 }
 
 - Phase 2: Frame
 - 床フレーム: completed
-- 左右壁フレーム: in progress
+- 左右壁フレーム: completed
 - 前後壁フレーム: not started
 - 天井フレーム: not started
 - ドア開口補強: not started
@@ -65,8 +65,8 @@ generated: { by: codex, at: 2026-01-01T10:00:00+09:00 }
 |---|---|---|
 | 床材切断 | completed | 寸法確認済み |
 | 床フレーム組立 | completed | 対角差 3 mm |
-| 左壁フレーム組立 | in progress | 縦材固定中 |
-| 右壁フレーム組立 | not started | 左壁完了後 |
+| 左壁フレーム組立 | completed | 高さ実測済み |
+| 右壁フレーム組立 | completed | 高さ実測済み |
 | 前壁フレーム組立 | not started | ドア開口を含む |
 | 後壁フレーム組立 | not started | - |
 | 天井フレーム組立 | not started | 壁4面固定後 |
@@ -122,7 +122,8 @@ generated: { by: codex, at: 2026-01-01T10:00:00+09:00 }
 | Floor frame depth | 1280 mm | 1279 mm | accepted |
 | Floor diagonal A | - | 2174 mm | measured |
 | Floor diagonal B | - | 2177 mm | measured |
-| Left wall height | 2100 mm | not measured | pending |
+| Left wall height | 2100 mm | 2098 mm | accepted |
+| Right wall height | 2100 mm | 2101 mm | accepted |
 | Door opening width | 650 mm | not measured | pending |
 | Door opening height | 1750 mm | not measured | pending |
 
@@ -176,10 +177,10 @@ Status: accepted
 
 優先順:
 
-1. 左壁フレームの縦材を固定する
-2. 左壁フレーム外寸を実測する
-3. 右壁フレームを組み立てる
-4. 前壁フレームのドア開口位置を確認する
+1. 前壁フレームを組み立てる
+2. ドア開口位置を確認する
+3. 後壁フレームを組み立てる
+4. 前後壁の垂直・幅を実測する
 5. 換気経路候補を確認する
 
 # Exit Criteria for Current Phase
