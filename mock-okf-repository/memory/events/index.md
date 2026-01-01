@@ -8,6 +8,7 @@ Memory Eventは、後から「なぜ現在このStateなのか」を理解する
 
 - [2026-01-01 Learning Topic A Stage 1 Completed](2026/01/2026-01-01-learning-topic-a-stage1-completed.md)
 - [2026-01-01 Soundproof Booth Structural Design Adopted](2026/01/2026-01-01-soundproof-booth-structural-design-adopted.md)
+- [2026-01-01 Soundproof Booth Wall Frames Completed](2026/01/2026-01-01-soundproof-booth-wall-frames-completed.md)
 
 ## Event Criteria
 

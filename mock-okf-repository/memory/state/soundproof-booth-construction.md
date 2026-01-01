@@ -6,8 +6,8 @@ tags: [soundproof-booth, construction, progress-control]
 status: stable
 scope: project
 domain: soundproof-booth-project
-updated_at: 2026-01-01T11:00:00+09:00
-generated: { by: codex, at: 2026-01-01T11:00:00+09:00 }
+updated_at: 2026-01-01T12:00:00+09:00
+generated: { by: codex, at: 2026-01-01T12:00:00+09:00 }
 ---
 
 # Purpose
@@ -30,7 +30,7 @@ generated: { by: codex, at: 2026-01-01T11:00:00+09:00 }
 | Phase | Status | Progress | Blocker |
 |---|---|---:|---|
 | Planning | completed | 100% | none |
-| Frame | in progress | 62% | none |
+| Frame | in progress | 82% | none |
 | Panels and Insulation | not started | 0% | frame incomplete |
 | Door and Sealing | not started | 0% | wall opening incomplete |
 | Ventilation | not started | 0% | route position unresolved |
@@ -43,9 +43,9 @@ generated: { by: codex, at: 2026-01-01T11:00:00+09:00 }
 - Phase 2: Frame
 - 床フレーム: completed
 - 左右壁フレーム: completed
-- 前後壁フレーム: not started
+- 前後壁フレーム: completed
 - 天井フレーム: not started
-- ドア開口補強: not started
+- ドア開口補強: completed
 
 # Task Board
 
@@ -67,10 +67,10 @@ generated: { by: codex, at: 2026-01-01T11:00:00+09:00 }
 | 床フレーム組立 | completed | 対角差 3 mm |
 | 左壁フレーム組立 | completed | 高さ実測済み |
 | 右壁フレーム組立 | completed | 高さ実測済み |
-| 前壁フレーム組立 | not started | ドア開口を含む |
-| 後壁フレーム組立 | not started | - |
+| 前壁フレーム組立 | completed | ドア開口を含めて固定済み |
+| 後壁フレーム組立 | completed | 垂直確認済み |
 | 天井フレーム組立 | not started | 壁4面固定後 |
-| ドア開口補強 | not started | 前壁施工時 |
+| ドア開口補強 | completed | 開口実測済み |
 
 ## Phase 3: Panels and Insulation
 
@@ -124,8 +124,10 @@ generated: { by: codex, at: 2026-01-01T11:00:00+09:00 }
 | Floor diagonal B | - | 2177 mm | measured |
 | Left wall height | 2100 mm | 2098 mm | accepted |
 | Right wall height | 2100 mm | 2101 mm | accepted |
-| Door opening width | 650 mm | not measured | pending |
-| Door opening height | 1750 mm | not measured | pending |
+| Front wall width | 1760 mm | 1759 mm | accepted |
+| Rear wall width | 1760 mm | 1761 mm | accepted |
+| Door opening width | 650 mm | 648 mm | accepted |
+| Door opening height | 1750 mm | 1748 mm | accepted |
 
 # Tolerance Rules
 
@@ -138,7 +140,7 @@ generated: { by: codex, at: 2026-01-01T11:00:00+09:00 }
 
 ## ISSUE-01: Ventilation route
 
-Status: open
+Status: ready-for-decision
 
 吸排気口の最終位置が未決定。
 
@@ -149,7 +151,7 @@ Status: open
 
 Required action:
 
-壁フレーム完成後、室内側・室外側の干渉を確認して位置を決定する。
+壁4面が完成したため、面材施工前に室内側・室外側の干渉を確認して位置を決定する。
 
 ## ISSUE-02: Floor frame diagonal difference
 
@@ -177,11 +179,11 @@ Status: accepted
 
 優先順:
 
-1. 前壁フレームを組み立てる
-2. ドア開口位置を確認する
-3. 後壁フレームを組み立てる
-4. 前後壁の垂直・幅を実測する
-5. 換気経路候補を確認する
+1. 壁4面を床フレームへ本固定する
+2. 天井フレームを組み立てる
+3. 天井フレーム外寸を実測する
+4. 換気経路候補を確定する
+5. Frame工程の最終確認を行う
 
 # Exit Criteria for Current Phase
 
