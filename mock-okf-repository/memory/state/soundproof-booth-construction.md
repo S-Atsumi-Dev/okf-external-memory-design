@@ -6,8 +6,8 @@ tags: [soundproof-booth, construction, progress-control]
 status: stable
 scope: project
 domain: soundproof-booth-project
-updated_at: 2026-01-01T12:00:00+09:00
-generated: { by: codex, at: 2026-01-01T12:00:00+09:00 }
+updated_at: 2026-01-01T13:00:00+09:00
+generated: { by: codex, at: 2026-01-01T13:00:00+09:00 }
 ---
 
 # Purpose
@@ -30,7 +30,7 @@ generated: { by: codex, at: 2026-01-01T12:00:00+09:00 }
 | Phase | Status | Progress | Blocker |
 |---|---|---:|---|
 | Planning | completed | 100% | none |
-| Frame | in progress | 82% | none |
+| Frame | in progress | 94% | none |
 | Panels and Insulation | not started | 0% | frame incomplete |
 | Door and Sealing | not started | 0% | wall opening incomplete |
 | Ventilation | not started | 0% | route position unresolved |
@@ -44,7 +44,7 @@ generated: { by: codex, at: 2026-01-01T12:00:00+09:00 }
 - 床フレーム: completed
 - 左右壁フレーム: completed
 - 前後壁フレーム: completed
-- 天井フレーム: not started
+- 天井フレーム: completed
 - ドア開口補強: completed
 
 # Task Board
@@ -69,7 +69,8 @@ generated: { by: codex, at: 2026-01-01T12:00:00+09:00 }
 | 右壁フレーム組立 | completed | 高さ実測済み |
 | 前壁フレーム組立 | completed | ドア開口を含めて固定済み |
 | 後壁フレーム組立 | completed | 垂直確認済み |
-| 天井フレーム組立 | not started | 壁4面固定後 |
+| 壁4面本固定 | completed | 床フレームへ固定済み |
+| 天井フレーム組立 | completed | 外寸実測済み |
 | ドア開口補強 | completed | 開口実測済み |
 
 ## Phase 3: Panels and Insulation
@@ -128,6 +129,8 @@ generated: { by: codex, at: 2026-01-01T12:00:00+09:00 }
 | Rear wall width | 1760 mm | 1761 mm | accepted |
 | Door opening width | 650 mm | 648 mm | accepted |
 | Door opening height | 1750 mm | 1748 mm | accepted |
+| Ceiling frame width | 1760 mm | 1760 mm | accepted |
+| Ceiling frame depth | 1280 mm | 1278 mm | accepted |
 
 # Tolerance Rules
 
@@ -140,18 +143,18 @@ generated: { by: codex, at: 2026-01-01T12:00:00+09:00 }
 
 ## ISSUE-01: Ventilation route
 
-Status: ready-for-decision
+Status: resolved
 
-吸排気口の最終位置が未決定。
+吸排気口の最終位置を決定した。
 
 影響:
 
-- Phase 5を開始できない
-- 面材施工前に開口位置を確定する必要がある
+- Phase 5開始時の開口位置が確定
+- 面材施工前に開口マーキングを行う
 
 Required action:
 
-壁4面が完成したため、面材施工前に室内側・室外側の干渉を確認して位置を決定する。
+後壁上部を排気、前壁下部を吸気とする。面材施工前に開口中心位置をマーキングする。
 
 ## ISSUE-02: Floor frame diagonal difference
 
@@ -174,16 +177,17 @@ Status: accepted
 - 床フレームの3 mm対角差は許容する
 - ドア寸法は計画値ではなく施工後の開口実測を優先する
 - 換気開口は位置確定まで加工しない
+- 換気経路は後壁上部を排気、前壁下部を吸気とする
 
 # Next Actions
 
 優先順:
 
-1. 壁4面を床フレームへ本固定する
-2. 天井フレームを組み立てる
-3. 天井フレーム外寸を実測する
-4. 換気経路候補を確定する
-5. Frame工程の最終確認を行う
+1. 全フレーム接合部の固定を再確認する
+2. フレーム全体の外寸・対角を実測する
+3. ドア開口の垂直を再確認する
+4. Frame工程の未完了Issueがないことを確認する
+5. Phase 2完了判定を行う
 
 # Exit Criteria for Current Phase
 
