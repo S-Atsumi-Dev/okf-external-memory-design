@@ -6,8 +6,8 @@ tags: [soundproof-booth, construction, project-plan]
 status: stable
 scope: project
 domain: soundproof-booth-project
-updated_at: 2026-01-01T10:00:00+09:00
-generated: { by: codex, at: 2026-01-01T10:00:00+09:00 }
+updated_at: 2026-01-01T14:05:00+09:00
+generated: { by: chatgpt/gpt-5.6-sol, at: 2026-01-01T14:05:00+09:00 }
 ---
 
 # Goal
@@ -25,6 +25,7 @@ generated: { by: codex, at: 2026-01-01T10:00:00+09:00 }
 
 構造設計の根拠は [Soundproof Booth Structural Design](soundproof-booth-structural-design.md) を参照する。
 
+材料の調達・使用・残数は [Soundproof Booth Material Inventory](soundproof-booth-material-inventory.md) で管理する。
 
 ## Dimensions
 
@@ -89,7 +90,7 @@ Status: completed
 
 ## Phase 2: Frame
 
-Status: in progress
+Status: completed
 
 - 床フレーム
 - 壁フレーム
@@ -156,7 +157,7 @@ Status: not started
 # Current Position
 
 - Planning: completed
-- Frame: in progress
+- Frame: completed
 - Panels and Insulation: not started
 - Door and Sealing: not started
 - Ventilation: not started
@@ -164,10 +165,9 @@ Status: not started
 
 # Next
 
-床フレームの寸法確認後、壁フレームの組立へ進む。
+Phase 3開始前に部材在庫を確認し、吸音材・外側面材の施工へ進む。
 
 # Open Questions
 
-- 換気経路の最終位置
 - ドア下端の気密方式
 - 完成後の遮音確認条件

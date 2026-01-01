@@ -28,6 +28,8 @@ Open Knowledge Format（OKF）を、LLM / Agentが継続利用する**外部メ�
 - [会話と外部メモリーの接続](docs/read-write-flow.md) — セッション中の参照・反映方法
 - [リポジトリを維持するためのルール](docs/operations-and-governance.md) — 更新・統合・整理の基準
 - [設計上のトレードオフ](docs/lessons-learned.md) — 継続性・履歴・検索性のバランス
+- [サンプルの見方](docs/sample-usage-guide.md) — 防音ブース例におけるKnowledge / State / Event / Git履歴の関係
+- [質問ごとの外部メモリー参照と応答例](docs/conversation-response-examples.md) — 質問・報告ごとのRead / Answer / Writeの具体例
 
 ### instructions/
 

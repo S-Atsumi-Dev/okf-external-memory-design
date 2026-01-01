@@ -83,3 +83,4 @@ next:
 
 ## 具体的な会話例
 
+防音ブースの現在Stateを使い、質問や進捗報告ごとにどのState / Event / Knowledgeを参照・更新するかは、[質問ごとの外部メモリー参照と応答例](conversation-response-examples.md) を参照してください。

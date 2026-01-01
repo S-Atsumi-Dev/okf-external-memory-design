@@ -6,8 +6,8 @@ tags: [soundproof-booth, construction, progress-control]
 status: stable
 scope: project
 domain: soundproof-booth-project
-updated_at: 2026-01-01T13:00:00+09:00
-generated: { by: codex, at: 2026-01-01T13:00:00+09:00 }
+updated_at: 2026-01-01T14:05:00+09:00
+generated: { by: chatgpt/gpt-5.6-sol, at: 2026-01-01T14:05:00+09:00 }
 ---
 
 # Purpose
@@ -24,28 +24,31 @@ generated: { by: codex, at: 2026-01-01T13:00:00+09:00 }
 
 設計条件そのものは [Soundproof Booth Project Plan](soundproof-booth-plan.md) を参照する。
 
+材料の現在在庫と再発注状態は [Soundproof Booth Material Inventory](soundproof-booth-material-inventory.md) を参照する。
 
 # Overall Status
 
 | Phase | Status | Progress | Blocker |
 |---|---|---:|---|
 | Planning | completed | 100% | none |
-| Frame | in progress | 94% | none |
-| Panels and Insulation | not started | 0% | frame incomplete |
-| Door and Sealing | not started | 0% | wall opening incomplete |
-| Ventilation | not started | 0% | route position unresolved |
+| Frame | completed | 100% | none |
+| Panels and Insulation | not started | 0% | none |
+| Door and Sealing | not started | 0% | none |
+| Ventilation | not started | 0% | none |
 | Verification | not started | 0% | construction incomplete |
 
 # Current Work
 
-現在作業中:
+現在状態:
 
-- Phase 2: Frame
+- Phase 2: Frame completed
 - 床フレーム: completed
 - 左右壁フレーム: completed
 - 前後壁フレーム: completed
 - 天井フレーム: completed
 - ドア開口補強: completed
+- 全接合部の固定確認: completed
+- Phase 3: ready to start
 
 # Task Board
 
@@ -96,8 +99,8 @@ generated: { by: codex, at: 2026-01-01T13:00:00+09:00 }
 
 | Task | Status | Dependency |
 |---|---|---|
-| 吸気位置決定 | pending | 配置確認 |
-| 排気位置決定 | pending | 配置確認 |
+| 吸気位置決定 | completed | 前壁下部 |
+| 排気位置決定 | completed | 後壁上部 |
 | ダクト開口施工 | not started | 位置決定 |
 | ファン取付 | not started | ダクト施工 |
 | 動作確認 | not started | ファン取付 |
@@ -131,6 +134,9 @@ generated: { by: codex, at: 2026-01-01T13:00:00+09:00 }
 | Door opening height | 1750 mm | 1748 mm | accepted |
 | Ceiling frame width | 1760 mm | 1760 mm | accepted |
 | Ceiling frame depth | 1280 mm | 1278 mm | accepted |
+| Final frame width | 1760 mm | 1759 mm | accepted |
+| Final frame depth | 1280 mm | 1279 mm | accepted |
+| Final frame height | 2100 mm | 2099 mm | accepted |
 
 # Tolerance Rules
 
@@ -181,21 +187,25 @@ Status: accepted
 
 # Next Actions
 
-優先順:
+Phase 2は完了。
 
-1. 全フレーム接合部の固定を再確認する
-2. フレーム全体の外寸・対角を実測する
-3. ドア開口の垂直を再確認する
-4. Frame工程の未完了Issueがないことを確認する
-5. Phase 2完了判定を行う
+次回はPhase 3開始前に次を行う。
+
+1. [部材在庫State](soundproof-booth-material-inventory.md)で吸音材・合板・石膏ボードの残数を確認する
+2. 換気開口位置を面材へマーキングする
+3. 外側合板の施工順を確認する
+4. Phase 3: Panels and Insulationを開始する
 
 # Exit Criteria for Current Phase
 
-Phase 2: Frameを完了扱いにする条件:
+Phase 2: Frame 完了確認:
 
-- 床フレーム完成
-- 壁4面のフレーム完成
-- ドア開口補強完成
-- 天井フレーム完成
-- 各主要寸法の実測完了
-- フレーム固定上の未解決Issueがない
+- [x] 床フレーム完成
+- [x] 壁4面のフレーム完成
+- [x] ドア開口補強完成
+- [x] 天井フレーム完成
+- [x] 各主要寸法の実測完了
+- [x] 全接合部の固定確認完了
+- [x] フレーム固定上の未解決Issueなし
+
+Result: completed
